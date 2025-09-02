@@ -26,7 +26,7 @@ Kuna’s mission is to **empower communities** by combining:
 
 ---
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 - **Frontend:** React / Next.js  
 - **Backend:** Node.js + Express (planned)  
@@ -34,6 +34,53 @@ Kuna’s mission is to **empower communities** by combining:
 - **Database:** PostgreSQL (or Supabase for early prototyping)  
 
 ---
+
+##  Technical Overview
+
+Kuna is not only a learning app — it is an **open financial-education infrastructure** designed with **scalability** and **interoperability** in mind.
+
+###  Stellar Integration
+- **Stellar SDK (JS & Python)** → Used to create wallets, issue micro-rewards, and track learner progress with on-chain proof.  
+- **Soroban Smart Contracts** → Manage reward distribution logic, track completion of modules, and enable programmable incentives.  
+- **Stablecoin Support (USDC on Stellar)** → Ensures rewards remain accessible and stable for users in Latin America.  
+
+###  System Architecture
+1. **Frontend (React/Next.js)**  
+   - Gamified UI with progress tracking.  
+   - Integrated Stellar wallet for learners.  
+
+2. **Backend (Node.js + Express)**  
+   - Handles user authentication.  
+   - Calls Stellar Horizon API for balance & transactions.  
+   - API endpoints for reward distribution.  
+
+3. **Smart Contracts (Soroban)**  
+   - Reward validation (XLM/USDC payouts).  
+   - Community pools to fund education incentives.  
+   - Leaderboards powered by on-chain data.  
+
+4. **Database (PostgreSQL / Supabase)**  
+   - Stores user progress, learning paths, and metadata.  
+   - Syncs with blockchain events for transparency.  
+
+---
+
+###  Differentiators
+- **On-Chain Proof of Learning**: Each completed module can be notarized as a blockchain record → "Learning NFTs" as verifiable credentials.  
+- **Micro-Remittances for Education**: Use Stellar’s low fees to enable cross-border sponsorships (e.g., donors in the US funding learners in Ecuador, with transparent tracking).  
+- **Open-Source Modules**: Educators and developers can create new learning paths, directly tied to Stellar rewards logic.  
+- **Community-first Approach**: Built for Latin American contexts (low connectivity, low fees), but extensible globally.  
+
+---
+
+###  Future Technical Goals
+- Mobile-first Progressive Web App (PWA).  
+- Integration with Stellar Anchor Network for fiat on/off ramps.  
+- Machine Learning module recommendations (personalized learning).  
+- Open APIs for NGOs, schools, and community orgs to plug into Kuna.  
+
+---
+
 
 ##  Roadmap
 
